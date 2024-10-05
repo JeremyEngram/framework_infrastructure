@@ -1,0 +1,25 @@
+re# General logging and configuration management
+PyYAML==6.0       # For loading configuration files in YAML format
+
+# If using optional logging configuration or handling
+logging==0.4.9.6
+
+# Optional: Machine Learning Integration with Hugging Face (if required by any module)
+transformers==4.30.0   # If you're using LLMs (e.g., for model loading and integration)
+torch==2.0.1           # Required if using transformers and deep learning models
+
+# For working with argument parsing, included with Python 3 but can specify if needed
+argparse==1.4.0
+
+# For potential importlib features and dynamic loading
+importlib-metadata==6.0.0
+
+# For more complex utilities, possibly shared across modules
+requests==2.31.0  # If your scripts require making HTTP requests (for example, OSINT modules)
+
+# Optional: Task scheduling with Celery (if you want to integrate job scheduling)
+celery==5.3.0
+
+# Any other common libraries you may use in your scripts
+pandas==2.1.1  # Example: if your scripts deal with data manipulation
+numpy==1.24.0  # Example: for numerical computing if needed

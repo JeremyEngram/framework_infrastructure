@@ -1,0 +1,14 @@
+version: 1
+formatters:
+  standard:
+    format: '%(asctime)s [%(levelname)s] %(message)s'
+handlers:
+  file:
+    class: logging.FileHandler
+    level: DEBUG
+    formatter: standard
+    filename: logs/main.log
+loggers:
+  CentralizedFramework:
+    handlers: [file]
+    level: DEBUG
